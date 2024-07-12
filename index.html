@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sunday Match Team</h1>
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input type="text" id="name1" placeholder="Enter first name">
+                <input type="text" id="name2" placeholder="Enter second name">
+                <button onclick="startGame()">Start Game</button>
+            </div>
+        </div>
+        <div class="dice-section">
+            <div id="dice" class="dice">Roll the dice!</div>
+            <button onclick="rollDice()">Roll Dice</button>
+        </div>
+        <div class="team-container">
+            <div class="team">
+                <h2>Team 1</h2>
+                <input type="text" id="team1-player" placeholder="Enter player name">
+                <button onclick="addPlayer('team1')">Add Player</button>
+                <ol id="team1-list"></ol>
+            </div>
+            
+            <div class="team">
+                <h2>Team 2</h2>
+                <input type="text" id="team2-player" placeholder="Enter player name">
+                <button onclick="addPlayer('team2')">Add Player</button>
+                <ol id="team2-list"></ol>
+            </div>
+        </div>
+        <button onclick="shareTeams()">Share via WhatsApp</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

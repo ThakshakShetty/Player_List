@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 300vh; /* Height increased for more scrolling */
+    margin: 0;
+    background-image: url('bg.png');
+    background-size: contain;
+    padding-top: 20px; /* Space at the top */
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('img.png');
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(233, 11, 11);
+    font-family: cursive;
+    text-decoration: underline solid rgb(5, 109, 200);
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center; /* Center the input-wrapper */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-wrapper input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 4px solid rgb(210, 250, 7);
+    background-color: bisque;
+    font-size: 16px;
+    flex: 1 1 calc(50% - 20px); /* Adjusted flex value for better spacing */
+    box-sizing: border-box;
+}
+
+.input-wrapper button {
+    width: 100%; /* Make the button take the full width */
+    padding: 10px 0; /* Adjust padding for better appearance */
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(130, 238, 7);
+    border: 2px solid magenta;
+}
+
+button:hover {
+    background: #036ebb;
+}
+
+.dice-section {
+    margin-top: 20px;
+}
+
+.dice {
+    font-size: 24px;
+    padding: 20px;
+    border: 2px solid rgb(241, 11, 241);
+    color: rgb(34, 220, 230);
+    background-color: black;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team {
+    flex: 1 1 calc(50% - 10px); /* Adjusted for better spacing */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(253, 249, 205);
+    border: 4px solid rgb(2, 199, 101);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(234, 242, 5);
+    background-color: rgb(193, 244, 244);
+}
+
+h2 {
+    color: rgb(233, 11, 11);
+    font-family: cursive;
+    text-decoration: underline solid rgb(5, 109, 200);
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #10cadb;
+    color: white;
+    border: 3px solid magenta;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+ol {
+    list-style-type: decimal; /* Corrected list style type */
+    padding: 0;
+    color: rgb(238, 13, 208);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team {
+        flex: 1 1 100%;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .input-wrapper input, .input-wrapper button {
+        width: 100%;
+    }
+}
